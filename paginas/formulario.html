@@ -1,0 +1,57 @@
+<!DOCTYPE html> 
+<html lang="pt-br"> 
+<head>
+  <meta charset="UTF-8">
+  <meta name="author" content="Eike Galvão Tavares">
+  <meta name="generator" content="Visual Studio">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Equipe Cornetas Running - Grupo de Corrida - Formulario">
+  <link rel="stylesheet" type="text/css" href="../estilos/layout.css">
+  <link rel="stylesheet" type="text/css" href="../estilos/formulario.css">
+  <link rel="shortcut icon" href="../fotos/logo.png.png" type="image/x-icon">
+  <title>Equipe Cornetas Running</title>
+</head>
+<body>
+   <header>
+    <h1>Equipe Cornetas Running</h1>
+    <img src="../fotos/logo.png.png" alt="logo cornetas" width="175" height="155">
+    <nav>
+      <a href="../index.html">Página Inicial</a>
+    </nav>
+  </header>
+  <main>
+    <section>
+       <h2>Vamos cornetar juntos? <span class="icon">🏃‍♀️💨</span></h2>
+        <form id="formulario" method="post">
+            <label for="lbNome">Nome:</label>
+            <input id="ipNome" name="ipNome" type="text" required>
+            <label fot="lbEmail">Email:</label>
+            <input id="ipEmail" name="ipEmail"  type="email" required>
+            <label for="lbMensagem">Conte um pouco sobre você</label>
+            <textarea id="taMensagem" name="taMensagem" rows="5"></textarea>
+            <label for="lbCorrida">Qual o seu objetivo?</label>
+            <select id="slCorrida" name="slCorrida">
+                <option value="Melhoria de Vida">Melhoria de Vida</option>
+                <option value="Melhorar meu ritmo">Melhorar meu ritmo</option>
+                <option value="Desenvolver minhas habilidades">Desenvolver minhas habilidades</option>
+                <option value="Fazer parte da galera">Fazer parte da galera</option>
+                <option value="Outros">Outros</option>
+            </select>
+            <label for="lbMotivo">Motivo do Contato</label>
+            <select id="slMotivo" name="slMotivo">
+                <option value="Quero começar a correr">Quero começar a correr</option>
+                <option value="Patrocinadores">Patrocinadores</option>
+                <option value="Eventos">Eventos</option>
+                <option value="Publicidades">Publicidades</option>
+                <option value="Outros">Outros</option>
+            </select>
+            <input type="submit" value="Enviar">
+        </form>
+    </section>
+  </main>
+    <footer>
+        <p>&copy; 2025 Equipe Cornetas Running. Todos os direitos reservados.</p>
+    </footer>
+    <script src="../scripts/formulario.js"></script>
+</body>
+</html>
